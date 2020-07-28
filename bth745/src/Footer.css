@@ -1,4 +1,4 @@
-.header {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,14 @@
     padding-right: 1em;
     background-color: #F93A3A;
 }
-
+.leftSide {
+    display: flex;
+    justify-content: space-between;
+}
+.rightSide {
+    display: flex;
+    justify-content: space-between;
+}
 a {
     color:black;
     font-weight: bolder;
