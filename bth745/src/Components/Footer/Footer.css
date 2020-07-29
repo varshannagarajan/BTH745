@@ -15,6 +15,9 @@
     display: flex;
     justify-content: space-between;
 }
+.link {
+    padding-left: 3em;
+}
 a {
     color:black;
     font-weight: bolder;
