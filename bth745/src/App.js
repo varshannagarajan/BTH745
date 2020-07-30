@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Slider games={Game}></Slider>
       <Footer></Footer>
     </div>
   );
