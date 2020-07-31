@@ -16,15 +16,15 @@ function Footer() {
         <Router>
             <nav className="footer">
                 <div className="leftSide">
-                    <Link to="/terms">Terms of Use </Link>
-                    <Link to="/jobs"> Jobs </Link>
-                    <Link to="/help"> Help </Link>
+                    <Link to="/terms" className="link">Terms of Use </Link>
+                    <Link to="/jobs" className="link"> Jobs </Link>
+                    <Link to="/help" className="link"> Help </Link>
                 </div>
                 <div className="rightSide">
-                    <a href="www.facebook.com" target="_blank"><FacebookIcon></FacebookIcon></a>
-                    <a href="www.instagram.com" target="_blank"><InstagramIcon></InstagramIcon></a>
-                    <a href="www.linkedin.com" target="_blank"><LinkedInIcon></LinkedInIcon></a>
-                    <a href="www.twitter.com" target="_blank"><TwitterIcon></TwitterIcon></a>
+                    <a href="www.facebook.com" target="_blank" className="link"><FacebookIcon></FacebookIcon></a>
+                    <a href="www.instagram.com" target="_blank" className="link"><InstagramIcon></InstagramIcon></a>
+                    <a href="www.linkedin.com" target="_blank" className="link"><LinkedInIcon></LinkedInIcon></a>
+                    <a href="www.twitter.com" target="_blank" className="link"><TwitterIcon></TwitterIcon></a>
                 </div>
             </nav>
 
