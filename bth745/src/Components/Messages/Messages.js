@@ -8,14 +8,14 @@ import TextField from '@material-ui/core/TextField';
 const useStyles = makeStyles({
     sentMsg: {
         marginTop: '1em',
-        marginRight: '10em',
-        backgroundColor: '#F94D4D',
-        maxWidth: '15em',
-    },
-    recievedMsg: {
-        marginTop: '1em',
         marginLeft: '10em',
         backgroundColor: '#CACFC9',
+        maxWidth: '15em',
+    },
+    receivedMsg: {
+        marginTop: '1em',
+        marginRight: '10em',
+        backgroundColor: '#F94D4D',
         maxWidth: '15em',
     },
     parent: {
@@ -29,19 +29,19 @@ function Message(props) {
     const classes = useStyles();
     const allMessages = []
     for (let i in props.props.messages) {
-        if (props.props.messages[i].recieved)
+        if (props.props.messages[i].received)
             allMessages.push(
-                <Card className={classes.sentMsg}>
+                <Card className={classes.receivedMsg}>
                     <CardContent>
                         <Typography variant="body2" component="p">
-                            {props.props.messages[i].recieved}
+                            {props.props.messages[i].received}
                         </Typography>
                     </CardContent>
                 </Card>
             )
         else
             allMessages.push(
-                <Card className={classes.recievedMsg}>
+                <Card className={classes.sentMsg}>
                     <CardContent>
                         <Typography variant="body2" component="p">
                             {props.props.messages[i].sent}
@@ -68,7 +68,6 @@ function Message(props) {
 
 export default function Messages(user) {
     const classes = useStyles();
-    console.log(user)
     return (
         <div>
             {Message(user)}
