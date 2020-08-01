@@ -54,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ArticleCard(props) {
-  console.log(props.article.picture)
   const classes = useStyles();
   return (
     <div className={classes.outline}> 
