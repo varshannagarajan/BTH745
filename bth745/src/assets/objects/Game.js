@@ -1,8 +1,8 @@
-var Game = [
+export const Game = [
   {
     "title": "Fortnite",
-    "description": "Figth your friends",
-    "price": 0,
+    "description": "Fight your friends",
+    "price": "Free",
     "picture": "/images/fortnite.png",
     "genre": "Shooter",
     "owned": false,
