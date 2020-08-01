@@ -111,7 +111,7 @@ function GamePreview(props) {
         src={window.location.origin + props.game.picture}
         onClick={handleClickOpen}
         className={classes.gameSelect}
-        alt={props.game.title}
+        alt={props.title}
       />
       <Dialog
         open={open}
@@ -148,27 +148,27 @@ function GamePreview(props) {
               >
                 <img
                   className={classes.carouselPicture}
-                  src={props.game.picture}
+                  src={window.location.origin + props.game.picture}
                   alt="Carousel 1"
                 />
                 <img
                   className={classes.carouselPicture}
-                  src={props.game.picture}
+                  src={window.location.origin + props.game.picture}
                   alt="Carousel 2"
                 />
                 <img
                   className={classes.carouselPicture}
-                  src={props.game.picture}
+                  src={window.location.origin + props.game.picture}
                   alt="Carousel 3"
                 />
                 <img
                   className={classes.carouselPicture}
-                  src={props.game.picture}
+                  src={window.location.origin + props.game.picture}
                   alt="Carousel 4"
                 />
                 <img
                   className={classes.carouselPicture}
-                  src={props.game.picture}
+                  src={window.location.origin  + props.game.picture}
                   alt="Carousel 5"
                 />
               </Carousel>
@@ -176,7 +176,7 @@ function GamePreview(props) {
           </div>
           <div className={classes.cellContainer}>
               <div className={classes.gameTitle}>{props.game.title}</div>
-              <div className={classes.price}>{props.game.price}</div>
+              <div className={classes.price}>{props.gameprice}</div>
               {[...Array(5)].map((stat, i) => {
                 const ratingValue = i + 1;
                 return (

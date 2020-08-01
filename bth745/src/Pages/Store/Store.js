@@ -3,6 +3,7 @@ import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import Game from '../../assets/objects/Game';
 import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from "@material-ui/core/styles";
+import GamePreview from '../../Components/GamePreview/GamePreview'
 
 import "@brainhubeu/react-carousel/lib/style.css";
 
@@ -10,60 +11,48 @@ const useStyles = makeStyles((theme) => ({
     title: {
         fontSize: "2.5em", 
         textAlign: "left",
-        paddingLeft: "1em",
+        paddingLeft: "1.8em",
     },
+    gameName: {
+        float: "left"
+    },
+    gamePrice: {
+        marginRight: "2px",
+        float: "right",
+        color: "red",
+    }
 }));
-
-const unique = (value, index, self) => {
-    return self.indexOf(value) === index
-  }
-
-
-
   
 function Store() {
     const classes = useStyles();
     const listOfGames = Game;
     let listOfGenres = [...new Set(listOfGames.map(x=> x.genre))];  
-
+    var gamesOfGenre = Array();
     return (
-        
         <div> 
         {listOfGenres.map((genre) => (
             <div>
             <div className={classes.title}>{genre}</div>
-            
             <Carousel
-            itemWidth={350}
             plugins={[
               "arrows",
               {
                 resolve: slidesToShowPlugin,
                 options: {
-                  numberOfSlides: 3,
+                  numberOfSlides: 4,
                 },
               },
             ]}
           >
-            {listOfGames.map((game) => (
-                
-            <div>
-            <img
-              className={classes.carouselPicture}
-              src={window.location.origin + game.picture}
-              alt="Carousel 1"/>
-              <p>{game.title} {game.price}</p>
-              </div>
+            {listOfGames.filter(game => game.genre == genre).map((currentGame) => (
+                <div>
+                    <GamePreview game={currentGame}></GamePreview>
+                    <div className={classes.gameName}>{currentGame.title}</div> <div className={classes.gamePrice}>{currentGame.price}</div>
+                </div>
             ))}
-         
-
           </Carousel>
           </div>
-
-
-
         ))}            
-        
         </div>
     )
 }
