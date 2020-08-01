@@ -5,6 +5,14 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import '@brainhubeu/react-carousel/lib/style.css';
 import './Slider.css'
+import GameLaunchCard from '../GameLaunchCard/GameLaunchCard';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+  } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     images: {
@@ -67,9 +75,11 @@ function Slider(props) {
                 >
                 {props.games.map(function(game, index){
                     return (
+                        <Link to={{pathname:"/gamelaunch", pictureProps:{picture: game.picture}}}>
                         <div>
                             {game.owned ? <Owned image={window.location.origin + game.picture} title={game.title}/> : <Purchase  image={game.picture} title={game.title} price={game.price}/>}
                         </div>
+                        </Link>
                     )
                 })}
             </Carousel>
