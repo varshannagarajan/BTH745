@@ -1,7 +1,6 @@
 import React from 'react';
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import { makeStyles } from "@material-ui/core/styles"
-import { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -69,7 +68,7 @@ function Slider(props) {
                 {props.games.map(function(game, index){
                     return (
                         <div>
-                            {game.owned ? <Owned image={game.picture} title={game.title}/> : <Purchase  image={game.picture} title={game.title} price={game.price}/>}
+                            {game.owned ? <Owned image={window.location.origin + game.picture} title={game.title}/> : <Purchase  image={game.picture} title={game.title} price={game.price}/>}
                         </div>
                     )
                 })}

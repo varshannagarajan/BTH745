@@ -3,7 +3,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Slider from './Components/Slider/Slider'
 import GameLaunchCard from './Components/GameLaunchCard/GameLaunchCard'
-import { Game } from './assests/objects/Game'
+import { Game } from './assets/objects/Game'
 import './App.css';
 
 
