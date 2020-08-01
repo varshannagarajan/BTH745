@@ -4,16 +4,16 @@ export const Game = [
     "description": "Fight your friends",
     "price": "Free",
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 4.5
   },
   {
     "title": "Apex Legends",
     "description": "Legends at their Apex!",
-    "price": 0,
+    "price": "Free",
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": true,
     "rating": 5
   },
@@ -31,7 +31,7 @@ export const Game = [
     "description": "Gotta catch them wallpapers!",
     "price": 5.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 5
   },
@@ -49,7 +49,7 @@ export const Game = [
     "description": "When duty calls, you answer",
     "price": 89.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": true,
     "rating": 4
   },
@@ -58,7 +58,7 @@ export const Game = [
     "description": "Radioactive wasteland, nukes, and guns",
     "price": 59.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 4
   },
@@ -67,7 +67,7 @@ export const Game = [
     "description": "Battle on the field part 3",
     "price": 59.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 4
   },
@@ -76,7 +76,7 @@ export const Game = [
     "description": "Tom Cruise make impossible missions possible",
     "price": 59.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 2
   },
@@ -85,7 +85,7 @@ export const Game = [
     "description": "The effect of mass is much larger than you think",
     "price": 19.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": true,
     "rating": 5
   },
@@ -94,7 +94,7 @@ export const Game = [
     "description": "Way better than Rachet and Clank",
     "price": 29.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 4
   },
@@ -103,7 +103,7 @@ export const Game = [
     "description": "Buy them stickers and skins boiiiii",
     "price": 19.99,
     "picture": "/images/fortnite.png",
-    "genre": "Shooter",
+    "genre": "Shooters",
     "owned": false,
     "rating": 5
   },
@@ -146,7 +146,7 @@ export const Game = [
   {
     "title": "Poker: Leashed",
     "description": "All that lovely poker action, but unfortunetly leashed",
-    "price": 0,
+    "price": "Free",
     "picture": "/images/fortnite.png",
     "genre": "Cards",
     "owned": true,
@@ -238,7 +238,7 @@ export const Game = [
     "description": "You like illustrations? You'll like this",
     "price": 49.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 5
   },
@@ -247,7 +247,7 @@ export const Game = [
     "description": "It's like Final Cut, but on a budget",
     "price": 24.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": true,
     "rating": 4
   },
@@ -256,7 +256,7 @@ export const Game = [
     "description": "Are you tring to be the next OVO40? Make them fire beats, my guy",
     "price": 79.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 5
   },
@@ -265,7 +265,7 @@ export const Game = [
     "description": "Make them sprites!",
     "price": 19.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 5
   },
@@ -274,7 +274,7 @@ export const Game = [
     "description": "Simulate being a Software Developer",
     "price": 34.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 3
   },
@@ -283,7 +283,7 @@ export const Game = [
     "description": "Become a Rocket Scientist and bring humans to mars!",
     "price": 19.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 4
   },
@@ -292,7 +292,7 @@ export const Game = [
     "description": "Did you spend your life's savings on a new PC? Benchmark it to make your friends feel like peasants.",
     "price": 10.99,
     "picture": "/images/fortnite.png",
-    "genre": "Program",
+    "genre": "Programs",
     "owned": false,
     "rating": 3
   }
