@@ -8,7 +8,7 @@ import TextField from '@material-ui/core/TextField';
 const useStyles = makeStyles({
     sentMsg: {
         marginTop: '1em',
-        marginLeft: '10em',
+        marginLeft: '40em',
         backgroundColor: '#CACFC9',
         maxWidth: '15em',
     },
