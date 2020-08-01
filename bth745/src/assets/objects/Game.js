@@ -296,6 +296,6 @@ export const Game = [
     "owned": false,
     "rating": 3
   }
-]
+];
 
 export default Game;

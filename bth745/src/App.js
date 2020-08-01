@@ -10,6 +10,7 @@ import './App.css';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Footer from './Components/Footer/Footer';
 import MessageFriends from './Components/Messages/MessageFriends';
+import Store from './Pages/Store/Store';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
 
           <Route path="/library" />
 
-          <Route path="/store" />
+          <Route path="/store" component={Store}/>
 
           <Route path="/messages" component={MessageFriends} />
 
