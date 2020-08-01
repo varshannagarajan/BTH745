@@ -11,6 +11,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Footer from './Components/Footer/Footer';
 import MessageFriends from './Components/Messages/MessageFriends';
 import Store from './Pages/Store/Store';
+import Library from './Pages/Library/Library';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Switch>
           <Route exact path="/" />
 
-          <Route path="/library" />
+          <Route path="/library" component={Library}/>
 
           <Route path="/store" component={Store}/>
 
