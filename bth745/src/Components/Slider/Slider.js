@@ -75,9 +75,7 @@ function Slider(props) {
                 >
                 {props.games.map(function(game, index){
                     return (
-                        <Link to="/gamelaunch" render={(props) => (
-                            <GameLaunchCard image={game.picture} {...props} />
-                          )}>
+                        <Link to={{pathname:"/gamelaunch", pictureProps:{picture: game.picture}}}>
                         <div>
                             {game.owned ? <Owned image={window.location.origin + game.picture} title={game.title}/> : <Purchase  image={game.picture} title={game.title} price={game.price}/>}
                         </div>

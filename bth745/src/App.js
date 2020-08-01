@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer';
 import MessageFriends from './Components/Messages/MessageFriends';
 import Store from './Pages/Store/Store';
 import Library from './Pages/Library/Library';
-import GameLaunchCard from './Components/GameLaunchCard/GameLaunchCard';
+import GameLaunch from './Pages/GameLaunch/GameLaunch';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
 
           <Route path="/profile" />
 
-          <Route path='/gamelaunch' component={GameLaunchCard}/>
+          <Route path='/gamelaunch' component={GameLaunch}/>
 
         </Switch>
       </Router>
