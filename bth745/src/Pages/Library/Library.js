@@ -36,7 +36,7 @@ function Library() {
             ownedGames.push(listOfGames[i]);
         }
     }
-    ownedGames.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+    ownedGames.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
     
     return (
         <>
