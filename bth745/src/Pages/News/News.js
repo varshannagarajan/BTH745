@@ -3,14 +3,16 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Article } from '../../assets/objects/Article';
 import ArticleCard from '../../Components/ArticleCard//ArticleCard';
 import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
+import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => ({
-    title: {
-        fontSize: "2.5em", 
-        textAlign: "left",
-        paddingLeft: "1.8em",
-    },
+  title: {
+    textAlign: "left",
+    paddingLeft: "2.3em",
+    paddingBottom: "0.75em",
+    marginTop: "4vh",
+},
     gameName: {
         float: "left"
     },
@@ -26,10 +28,10 @@ function News() {
     let articleList = Article;
     let gameHeaders = [...new Set(articleList.map(x=> x.game))];
     return (
-        <div> 
+        <div>
         {gameHeaders.map((gameTitle) => (
             <div>
-            <div className={classes.title}>{gameTitle}</div>
+            <Typography variant="h5" className={classes.title}>{gameTitle}</Typography>
             <Carousel
             plugins={[
               "arrows",
@@ -49,7 +51,7 @@ function News() {
             ))}
           </Carousel>
           </div>
-        ))}            
+        ))}
         </div>
     )
 }

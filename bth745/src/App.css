@@ -39,30 +39,37 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 5vh;
+  height: 7vh;
   padding-left: 1em;
   padding-right: 1em;
   background-color: #F93A3A;
 }
+.logo-div {
+  justify-self: left;
+}
 .logo {
   justify-self: left;
-  font-size: xx-large;
+  margin-left: 1em;
+  font-size: x-large;
 }
 .links {
-  display: flex;
-  justify-content: space-between;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.3em;
+  margin-left: -60vw;
 }
 .link {
   padding-left: 3em;
 }
 a {
   color:black;
-  font-weight: bolder;
   text-decoration: none;
 }
 .selected {
   text-decoration: underline;
   text-transform: uppercase;
+}
+.profile {
+  padding-top: 0.3em;
 }

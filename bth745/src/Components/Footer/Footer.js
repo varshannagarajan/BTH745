@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     appBar: {
       top: 'auto',
       bottom: 0,
+      boxShadow: "0 -2px 6px rgba(0, 0, 0, 0.3)"
     },
   }));
 
