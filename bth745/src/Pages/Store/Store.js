@@ -3,16 +3,18 @@ import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import Game from '../../assets/objects/Game';
 import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from "@material-ui/core/styles";
-import GamePreview from '../../Components/GamePreview/GamePreview'
+import GamePreview from '../../Components/GamePreview/GamePreview';
+import Typography from '@material-ui/core/Typography';
 
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const useStyles = makeStyles((theme) => ({
-    title: {
-        fontSize: "2.5em",
-        textAlign: "left",
-        paddingLeft: "1.8em",
-    },
+  title: {
+    textAlign: "left",
+    paddingLeft: "2.3em",
+    paddingBottom: "0.75em",
+    marginTop: "4vh",
+},
     gameName: {
         float: "left"
     },
@@ -20,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: "2px",
         float: "right",
         color: "red",
-    }
+    },
 }));
 
 function Store() {
@@ -32,7 +34,7 @@ function Store() {
         <div>
         {listOfGenres.map((genre) => (
             <div>
-            <div className={classes.title}>{genre}</div>
+            <Typography variant="h5" className={classes.title}>{genre}</Typography>
             <Carousel
             plugins={[
               "arrows",

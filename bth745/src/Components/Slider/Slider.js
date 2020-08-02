@@ -16,7 +16,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
     images: {
-        height: "20vh",
+        height: "25vh",
     },
     titlePurchased: {
         textAlign: "left",
@@ -68,7 +68,7 @@ function Slider(props) {
                     {
                     resolve: slidesToShowPlugin,
                     options: {
-                    numberOfSlides: 5
+                    numberOfSlides: 4
                     },
                     },
                 ]}

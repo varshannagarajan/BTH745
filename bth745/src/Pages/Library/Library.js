@@ -1,17 +1,18 @@
 import React from 'react';
 import Game from '../../assets/objects/Game';
 import { makeStyles } from "@material-ui/core/styles";
-import Slider from '../../Components/Slider/Slider'
+import Slider from '../../Components/Slider/Slider';
+import Typography from '@material-ui/core/Typography';
 
 
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        fontSize: "2.5em", 
         textAlign: "left",
-        paddingLeft: "1.8em",
-        marginTop: "40px"
+        paddingLeft: "2.3em",
+        paddingBottom: "0.75em",
+        marginTop: "4vh",
     },
     gameName: {
         float: "left"
@@ -37,19 +38,19 @@ function Library() {
         }
     }
     ownedGames.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
-    
+
     return (
         <>
-        <div className="container"> 
-        <div className={classes.title}>Recently Played</div>
+        <div className="container">
+        <Typography variant="h5" className={classes.title}>Recently Played</Typography>
         <Slider games={recentlyPlayed}>
-        </Slider>       
+        </Slider>
         </div>
 
-        <div className="container"> 
-        <div className={classes.title}>Games</div>
+        <div className="container">
+        <Typography variant="h5" className={classes.title}>Games</Typography>
         <Slider games={ownedGames}>
-        </Slider>       
+        </Slider>
         </div>
 
         </>
