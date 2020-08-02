@@ -40,5 +40,19 @@ export const Article = [
         "contents": "Damn, Neil's flicks are too clean! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sapien at enim molestie porttitor. Nunc sed odio nec orci finibus pellentesque ac sed nisl. Nullam id justo sed tortor imperdiet elementum aliquam eget turpis. Sed rhoncus ultricies dictum. Maecenas a justo a augue ultricies cursus. In hac habitasse platea dictumst. Maecenas posuere arcu lorem, ac congue nulla suscipit non. Vivamus laoreet congue tristique. Vivamus est est, iaculis non augue in, feugiat pharetra magna. Fusce lectus justo, dapibus porta elit eget, facilisis venenatis orci. Nunc eget nibh lacus. Aliquam sed ultrices sem. Nullam accumsan ultrices porta. Suspendisse vulputate nibh dolor, at dictum orci maximus ac. Aenean malesuada, nisl ut blandit volutpat, dui magna egestas quam, vitae mollis neque felis in eros. Nulla luctus tristique libero id placerat. Nam eleifend nulla quis mauris mollis, id lacinia magna semper. Proin tristique sem dolor, ut tempor tellus volutpat at. Nunc pretium at augue non aliquam. Pellentesque libero lectus, laoreet mollis nunc et, facilisis dapibus lacus. Nunc auctor finibus nunc. Ut facilisis erat ante, in ullamcorper ligula vulputate at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec semper elit, ullamcorper vulputate sapien. Proin a mauris et orci consequat fermentum. Ut non elit ut tortor suscipit vehicula. Integer congue, nisi vel egestas lacinia, justo tellus ornare risus, sit amet laoreet libero ipsum ut augue. Integer malesuada magna sit amet fermentum laoreet. Sed pulvinar lacus eu quam vulputate, id lacinia eros fringilla. Maecenas mauris est, fermentum at accumsan ut, ornare eu enim. Nullam fermentum porta dignissim. Nulla sit amet eleifend purus.",
         "picture": "/images/fortnite.png",
         "game": "CS: GO"
+    },
+    {
+        "title": "Can't Marry The Grim Reaper! - v12.4 ",
+        "author": "EA",
+        "picture": "/images/fortnite.png",
+        "contents": "passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32",
+        "game": "Sim 4"
+    },
+    {
+        "title": "Frog, A Performance! - v14.4 ",
+        "author": "Valve",
+        "picture": "/images/fortnite.png",
+        "contents": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "game": "CS: GO"
     }
 ]
