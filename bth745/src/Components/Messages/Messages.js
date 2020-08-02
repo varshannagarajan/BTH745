@@ -67,7 +67,6 @@ function Message(props) {
 }
 
 export default function Messages(user) {
-    const classes = useStyles();
     return (
         <div>
             {Message(user)}

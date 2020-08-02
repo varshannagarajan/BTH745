@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
         marginRight: "2px",
         float: "right",
         color: "red",
+    },
+    viewHeight: {
+      height: "20vh"
     }
 }));
 
@@ -37,14 +40,14 @@ function Store() {
               {
                 resolve: slidesToShowPlugin,
                 options: {
-                  numberOfSlides: 4,
+                  numberOfSlides: 5,
                 },
               },
             ]}
           >
             {listOfGames.filter(game => game.genre === genre).map((currentGame) => (
                 <div>
-                    <GamePreview game={currentGame}></GamePreview>
+                    <GamePreview game={currentGame} className={classes.viewHeight}></GamePreview>
                     <div className={classes.gameName}>{currentGame.title}</div> <div className={classes.gamePrice}>{currentGame.price}</div>
                 </div>
             ))}

@@ -57,9 +57,6 @@ function Purchase(props) {
 }
 
 function Slider(props) {
-    for (var i = 0; i < props.games.length; i++) {
-        console.log(props.games[i].picture);
-    }
     return (
         <>
             <Carousel

@@ -83,7 +83,8 @@ const useStyles = makeStyles((theme) => ({
   },
   gameSelect: {
     cursor: "pointer",
-    width: "20vw",
+    height: "20vh",
+    width:"98%"
   },
 }));
 
