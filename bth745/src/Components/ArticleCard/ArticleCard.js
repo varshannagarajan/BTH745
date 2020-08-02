@@ -168,7 +168,10 @@ function ArticleCard(props) {
               <p>{props.article.contents}</p>
             </div>
           </div>
-          <BackspaceIcon className={classes.closeButton} />
+          <BackspaceIcon
+            className={classes.closeButton}
+            onClick={handleClose}
+          />
         </div>
       </Dialog>
     </div>

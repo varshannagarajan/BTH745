@@ -41,7 +41,7 @@ function News() {
               },
             ]}
           >
-            {articleList.filter(gameName => gameName.game == gameTitle).map((currentGame) => (
+            {articleList.filter(gameName => gameName.game === gameTitle).map((currentGame) => (
                 <div>
                     <ArticleCard article={currentGame}></ArticleCard>
                     <div className={classes.gameName}>{currentGame.title}</div> <div className={classes.gamePrice}>{currentGame.price}</div>
