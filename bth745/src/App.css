@@ -44,7 +44,10 @@
   padding-left: 1em;
   padding-right: 1em;
   background-color: #F93A3A;
-  box-Shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  box-Shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.logo-div {
+  justify-self: left;
 }
 .logo-div {
   justify-self: left;
