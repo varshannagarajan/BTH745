@@ -17,6 +17,7 @@ import {
 const useStyles = makeStyles((theme) => ({
     images: {
         height: "20vh",
+        width: "100%",
     },
     titlePurchased: {
         textAlign: "left",

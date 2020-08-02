@@ -10,11 +10,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./Footer.css";
 
 const useStyles = makeStyles((theme) => ({
-  appBar: {
-    top: "auto",
-    bottom: 0,
-  },
-}));
+    appBar: {
+      top: 'auto',
+      bottom: 0,
+      boxShadow: "0 -2px 6px rgba(0, 0, 0, 0.3)"
+    },
+  }));
 
 function Footer() {
   const classes = useStyles();

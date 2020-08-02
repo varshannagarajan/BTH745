@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
   gameSelect: {
     cursor: "pointer",
     height: "20vh",
-    width:"98%"
+    width:"100%"
   },
 }));
 
@@ -116,11 +116,11 @@ function GamePreview(props) {
         onClose={handleClose}
         fullScreen={fullScreen}
         aria-labelledby="responsive-dialog-title"
-        autoDetectWindowHeight={false} 
+        autoDetectWindowHeight={false}
         autoScrollBodyContent={false}
         contentStyle={{width: "100%", maxWidth: "none"}}
         maxWidth={"xl"}
-        
+
       >
         <DialogContent className={classes.outline}>
           <div className={classes.cellContainer}>
