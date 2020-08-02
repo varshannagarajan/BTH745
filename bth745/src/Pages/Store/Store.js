@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import Game from '../../assets/objects/Game';
-import { useTheme } from '@material-ui/core/styles';
 import { makeStyles } from "@material-ui/core/styles";
 import GamePreview from '../../Components/GamePreview/GamePreview'
 
@@ -27,7 +26,6 @@ function Store() {
     const classes = useStyles();
     const listOfGames = Game;
     let listOfGenres = [...new Set(listOfGames.map(x=> x.genre))];
-    var gamesOfGenre = Array();
     return (
         <div>
         {listOfGenres.map((genre) => (
@@ -44,7 +42,7 @@ function Store() {
               },
             ]}
           >
-            {listOfGames.filter(game => game.genre == genre).map((currentGame) => (
+            {listOfGames.filter(game => game.genre === genre).map((currentGame) => (
                 <div>
                     <GamePreview game={currentGame}></GamePreview>
                     <div className={classes.gameName}>{currentGame.title}</div> <div className={classes.gamePrice}>{currentGame.price}</div>
