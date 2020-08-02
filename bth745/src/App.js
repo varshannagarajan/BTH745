@@ -13,6 +13,7 @@ import MessageFriends from './Components/Messages/MessageFriends';
 import Store from './Pages/Store/Store';
 import Library from './Pages/Library/Library';
 import GameLaunch from './Pages/GameLaunch/GameLaunch';
+import News from './Pages/News/News';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
 
           <Route path="/messages" component={MessageFriends} />
 
-          <Route path="/news" />
+          <Route path="/news" component={News}/>
 
           <Route path="/profile" />
 
