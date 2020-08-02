@@ -4,7 +4,8 @@ import {
   Switch,
   Route,
   Link,
-  NavLink
+  NavLink,
+  Redirect
 } from 'react-router-dom';
 import './App.css';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <Router>
         <nav className="header">
-          <NavLink to="/" className='logo'>IGNITE</NavLink>
+          <NavLink to="/library" className='logo'>IGNITE</NavLink>
           <div className="links">
             <NavLink to="/library" className="link" activeClassName='selected'>Library</NavLink>
             <NavLink to="/store" className="link" activeClassName='selected'>Store</NavLink>
@@ -31,9 +32,11 @@ function App() {
         </nav>
 
         <Switch>
-          <Route exact path="/" />
+          <Route exact path="/">
+            <Redirect to="/library" />
+          </Route>
 
-          <Route path="/library" component={Library}/>
+          <Route path="/library" component={Library} />
 
           <Route path="/store" component={Store}/>
 

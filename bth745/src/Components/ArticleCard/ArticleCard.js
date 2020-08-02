@@ -5,54 +5,6 @@ import Dialog from "@material-ui/core/Dialog";
 
 const useStyles = makeStyles((theme) => ({
   outline: {
-    borderStyle: "solid",
-    borderColor: "lightgray",
-    width: "90vw",
-    minHeight: "45vh",
-    paddingTop: "1.25vh",
-    paddingRight: "2em",
-    paddingLeft: "2em",
-    paddingBottom: "1.25em",
-    display: "flex",
-    borderRadius: "10px",
-    boxShadow: "10px 10px 10px #999",
-  },
-  cellContainer: {
-    width: "50%",
-    textAlign: "center",
-    maxHeight: "60%",
-  },
-  coverImage: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    marginTop: "3.3em",
-    objectFit: "contain",
-    opacity: "0.7",
-    borderRadius: "5px",
-  },
-  articleTitle: {
-    color: "#F93A3A",
-    fontSize: "3.5em",
-  },
-  author: {
-    color: "#141414",
-    fontSize: "2em",
-    fontFamily: "Roboto, sans serif",
-  },
-  information: {
-    padding: "1em",
-    overflow: "auto",
-    color: "#141414",
-    fontSize: "1.5em",
-    maxHeight: "70vh",
-    overflowX: "hidden",
-  },
-  closeButton: {
-    position: "static",
-    float: "right",
-    fontSize: "2.5em",
-  },
-  outline: {
     width: "95rem",
     minHeight: "45vh",
     paddingTop: "1.25vh",
@@ -156,6 +108,7 @@ function ArticleCard(props) {
               <img
                 className={classes.coverImage}
                 src={window.location.origin + props.article.picture}
+                alt="Game"
               />
               <h1 className={classes.articleTitle}>{props.article.title}</h1>
               <div className={classes.author}>
@@ -168,7 +121,10 @@ function ArticleCard(props) {
               <p>{props.article.contents}</p>
             </div>
           </div>
-          <BackspaceIcon className={classes.closeButton} />
+          <BackspaceIcon
+            className={classes.closeButton}
+            onClick={handleClose}
+          />
         </div>
       </Dialog>
     </div>
