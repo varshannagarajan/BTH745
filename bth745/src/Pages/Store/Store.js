@@ -9,7 +9,7 @@ import "@brainhubeu/react-carousel/lib/style.css";
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        fontSize: "2.5em", 
+        fontSize: "2.5em",
         textAlign: "left",
         paddingLeft: "1.8em",
     },
@@ -22,14 +22,14 @@ const useStyles = makeStyles((theme) => ({
         color: "red",
     }
 }));
-  
+
 function Store() {
     const classes = useStyles();
     const listOfGames = Game;
-    let listOfGenres = [...new Set(listOfGames.map(x=> x.genre))];  
+    let listOfGenres = [...new Set(listOfGames.map(x=> x.genre))];
     var gamesOfGenre = Array();
     return (
-        <div> 
+        <div>
         {listOfGenres.map((genre) => (
             <div>
             <div className={classes.title}>{genre}</div>
@@ -52,7 +52,7 @@ function Store() {
             ))}
           </Carousel>
           </div>
-        ))}            
+        ))}
         </div>
     )
 }
